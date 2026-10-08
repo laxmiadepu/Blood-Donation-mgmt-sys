@@ -13,7 +13,7 @@ $blodgroup=$_POST['bloodgroup'];
 $address=$_POST['address'];
 $message=$_POST['message'];
 $status=1;
-    $password=md5($_POST['password']);
+    $password=$_POST['password'];
     $ret="select EmailId from tblblooddonars where EmailId=:email";
     $query= $dbh -> prepare($ret);
     $query-> bindParam(':email', $email, PDO::PARAM_STR);

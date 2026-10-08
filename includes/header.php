@@ -1,4 +1,4 @@
-<?php session_start(); 
+<?php session_start(); error_reporting(0);
 ?>
 <!-- header -->
     <header>
@@ -8,29 +8,7 @@
                 <div class="row">
                     <div class="col-lg-7 top-social-agile">
                         <div class="row">
-                            <!-- social icons -->
-                            <ul class="col-lg-4 col-6 top-right-info text-center">
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li class="mx-3">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-google-plus-g"></i>
-                                    </a>
-                                </li>
-                                <li class="ml-3">
-                                    <a href="#">
-                                        <i class="fab fa-pinterest-p"></i>
-                                    </a>
-                                </li>
-                            </ul><?php 
+                            <?php 
 $pagetype="contactus";
 $sql = "SELECT * from tblcontactusinfo";
 $query = $dbh -> prepare($sql);
@@ -58,7 +36,7 @@ foreach($results as $result)
                             </div>
                             <div class="col-lg-5 col-6 header-w3layouts pl-4 text-lg-left">
                                 <p class="text-white" style="color:#db1212 !important">
-                                    <i class="fas fa-phone mr-2"></i>03033173484</p>
+                                    <i class="fas fa-phone mr-2"></i>08716202103</p>
                             </div>
                         </div><?php } } ?>
                     </div>

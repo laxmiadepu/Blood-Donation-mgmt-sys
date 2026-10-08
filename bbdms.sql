@@ -42,7 +42,7 @@ CREATE TABLE `tbladmin` (
 --
 
 INSERT INTO `tbladmin` (`ID`, `AdminName`, `UserName`, `MobileNumber`, `Email`, `Password`, `AdminRegdate`) VALUES
-(1, 'Admin', 'admin', 8979555558, 'admin@gmail.com', 'aaa32cd08f9df664187683f8698a862b', '2022-07-28 04:36:52');
+(1, 'divyasri', 'divya', 1122334455, 'divya12@gmail.com', 'divya12', '2022-07-28 04:36:52');
 
 -- --------------------------------------------------------
 
@@ -70,16 +70,8 @@ CREATE TABLE `tblblooddonars` (
 --
 
 INSERT INTO `tblblooddonars` (`id`, `FullName`, `MobileNumber`, `EmailId`, `Gender`, `Age`, `BloodGroup`, `Address`, `Message`, `PostingDate`, `status`, `Password`) VALUES
-(6, 'Saad Khanzada', '7797987981', 'Saad@gmail.com', 'Male', 35, 'O-', 'Hiraabad,hyderabad', ' Call me if blood require', '2022-05-17 12:43:41', 1, '202cb962ac59075b964b07152d234b70'),
-(9, 'ritik advani', '9789797979', 'ritik@gmail.com', 'Male', 56, 'A+', 'Allahabad', ' gjhgjhgjhghjghj', '2022-05-21 06:09:08', 1, '202cb962ac59075b964b07152d234b70'),
-(10, 'Furqan Ahmed', '1236547890', 'naruto@gmail.com', 'Male', 25, 'O-', 'qasimabad, Hyderabad', ' NA', '2022-07-29 01:50:58', 1, 'f925916e2754e5e03f75dd58a5733251'),
-(11, 'amrat kumar', '1231231230', 'amratk@gmail.com', 'Male', 26, 'AB+', 'jamshoro', ' NA', '2022-08-02 01:22:52', 1, 'f925916e2754e5e03f75dd58a5733251'),
-(12, 'sasuke uchiha', '1425362514', 'Suchicha@test.com', 'Male', 30, 'A-', 'Leaf Village', ' NA', '2022-12-27 17:31:08', 1, 'f925916e2754e5e03f75dd58a5733251'),
-(13, 'Eren yeager', '32421421', 'tatakae@gmail.com', 'Male', 23, 'O-', 'paradise island', 'ADFSAD ', '2023-03-30 14:39:09', 1, 'e08c822067e64be2037d020826b078f1'),
-(16, 'demo', '0912', 'ddemo@king.com', 'Male', 21, 'O+', 'Haram Medical Center near Police Station, Qila Area, TandoAllahyar', ' asda', '2023-03-30 19:55:18', 1, '81dc9bdb52d04dc20036dbd8313ed055'),
-(17, 'Noor Ahmed', '12345', 'Noor@yahoo.com', 'Male', 20, 'AB-', 'House No 492 W/B khanzada muhalla , Qila Area', ' Im Hero', '2023-04-01 20:09:49', 1, '81dc9bdb52d04dc20036dbd8313ed055'),
-(18, 'Doremon', '098', 'dora@dora.com', 'Male', 20, 'O-', 'House No 22c W/B khanzada muhalla , Qila Area', 'nice', '2023-04-01 20:14:38', 1, '81dc9bdb52d04dc20036dbd8313ed055');
-
+(1, 'sana', '1122334455', 'sana12@gmail.com', 'female', 21, 'O-', 'warangal', ' Call me if blood require', '2022-05-17 12:43:41', 1, 'sana12');
+(2, 'divya','1122334455', 'divya12@gmail.com', 'female', 20, 'A+', 'janagon', ' gjhgjhgjhghjghj', '2022-05-21 06:09:08', 1, 'divya12');
 -- --------------------------------------------------------
 
 --
@@ -128,20 +120,7 @@ CREATE TABLE `tblbloodrequirer` (
 --
 
 INSERT INTO `tblbloodrequirer` (`ID`, `BloodDonarID`, `name`, `EmailId`, `ContactNumber`, `BloodRequirefor`, `Message`, `ApplyDate`) VALUES
-(1, 6, 'Rakesh', 'rak@gmail.com', 7894561236, 'Father', 'Please help', '2022-05-17 11:57:24'),
-(2, 3, 'Mukesh', 'muk@gmail.com', 5896231478, 'Others', 'Please help', '2022-05-17 11:58:48'),
-(3, 6, 'Hitesh', 'hit@gmail.com', 1236547896, 'Brother', 'do the needful', '2022-05-17 12:02:12'),
-(4, 10, 'Rahul Singh', 'rahk@gmail.com', 2536251425, 'Mother', 'Please help me', '2022-07-29 01:51:52'),
-(5, 11, 'Anuj Kumar', 'ak@gmail.com', 8525232102, 'Others', 'Need blood on urgent basis', '2022-08-02 01:24:18'),
-(6, 12, 'sad', 'sadsa@gmail.com', 0, 'Brother', 'asd', '2023-03-30 14:26:35'),
-(7, 9, 'Saad', 'saad@yahoo.com', 1234, 'Others', 'hello shb', '2023-03-30 14:45:31'),
-(8, 9, 'saad', 'saad@yahoo.com', 1234, 'Father', 'Hello to the universe', '2023-03-30 14:47:19'),
-(9, 13, 'noor', 'noor@gmail.com', 3242142, 'Father', 'please work krly bhia', '2023-03-30 15:04:01'),
-(10, 9, 'Noor', 'noor@yahoo.com', 12345, 'Sister', 'Plese Donate', '2023-04-01 20:12:41'),
-(11, 17, 'Dora', 'dora@dora.com', 98, 'Mother', 'Please Doinbate', '2023-04-01 20:15:27'),
-(12, 18, 'Muhammad Saad Alam', 'saadalamk555@gmail.com', 3033173484, 'Mother', 'Please Contact me i neeed blood urgently.', '2023-04-04 18:59:43'),
-(13, 18, 'Muhammad Saad Alam', 'saadalamk555@gmail.com', 3033173484, 'Brother', 'Please Donate this blood.', '2023-04-05 14:34:34'),
-(14, 17, 'naruto', 'naruto@leaf.com', 123, 'Brother', 'Please donate dattaybayo.', '2023-04-05 14:46:51');
+(1, 6, 'nandini', 'nandini12@gmail.com', 1122334455, 'mother', 'Please help', '2022-05-17 11:57:24');
 
 -- --------------------------------------------------------
 
@@ -161,7 +140,7 @@ CREATE TABLE `tblcontactusinfo` (
 --
 
 INSERT INTO `tblcontactusinfo` (`id`, `Address`, `EmailId`, `ContactNo`) VALUES
-(1, 'Test Demo test demo																									', 'test@test.com', '8585233222');
+(1, 'warangal', 'test@test.com', '1122334455');
 
 -- --------------------------------------------------------
 
@@ -184,7 +163,7 @@ CREATE TABLE `tblcontactusquery` (
 --
 
 INSERT INTO `tblcontactusquery` (`id`, `name`, `EmailId`, `ContactNumber`, `Message`, `PostingDate`, `status`) VALUES
-(8, 'Saad Khan', 'saad@gmail.com', '2131', 'YEah!!1 boii\r\n', '2023-03-30 16:21:22', 1);
+(1, 'sana', 'sana@gmail.com', '1122334455', 'YEah!!1 boii\r\n', '2023-03-30 16:21:22', 1);
 
 -- --------------------------------------------------------
 

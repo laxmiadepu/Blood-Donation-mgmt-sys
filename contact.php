@@ -75,19 +75,6 @@ echo "<script>alert('Something went wrong. Please try again.');</script>";
 		</div>
 		<!-- //banner 2 -->
 	</div>
-	<!-- page details -->
-	<!-- <div class="breadcrumb-agile">
-		<div aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item">
-					<a href="index.php">Home</a>
-				</li>
-				<li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-			</ol>
-		</div>
-	</div> -->
-	<!-- //page details -->
-
 	<!-- contact -->
 	<div class="agileits-contact py-5">
 		<div class="py-xl-5 py-lg-3">
@@ -96,9 +83,7 @@ echo "<script>alert('Something went wrong. Please try again.');</script>";
 				<span>
 					<i class="fas fa-user-md"></i>
 				</span>
-				<p class="mt-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="d-flex">
+				<div class="d-flex">
 				<div class="col-lg-5 w3_agileits-contact-left">
 				</div>
 				<div class="col-lg-7 contact-right-w3l">
@@ -115,10 +100,8 @@ echo "<script>alert('Something went wrong. Please try again.');</script>";
 						<div class="form-group">
 							<input type="email" class="form-control" id="email" name="email" required placeholder="Please enter your email address.">
 						</div>
-						
-
 						<div class="form-group">
-							<textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Please enter your message" maxlength="999" style="resize:none"></textarea>
+						<textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Please enter your message" maxlength="999" style="resize:none"></textarea>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="Send Message" name="send">
@@ -129,56 +112,6 @@ echo "<script>alert('Something went wrong. Please try again.');</script>";
 		</div>
 	</div>
 	<!-- //contact -->
-
-	
-
-
-	<?php include('includes/footer.php');?>
-
-	<!-- Js files -->
-	<!-- JavaScript -->
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- Default-JavaScript-File -->
-
-	<!-- banner slider -->
-	<script src="js/responsiveslides.min.js"></script>
-	<script>
-		$(function () {
-			$("#slider4").responsiveSlides({
-				auto: true,
-				pager: true,
-				nav: true,
-				speed: 1000,
-				namespace: "callbacks",
-				before: function () {
-					$('.events').append("<li>before event fired.</li>");
-				},
-				after: function () {
-					$('.events').append("<li>after event fired.</li>");
-				}
-			});
-		});
 	</script>
-	<!-- //banner slider -->
-
-	<!-- fixed navigation -->
-	<script src="js/fixed-nav.js"></script>
-	<!-- //fixed navigation -->
-
-	<!-- smooth scrolling -->
-	<script src="js/SmoothScroll.min.js"></script>
-	<!-- move-top -->
-	<script src="js/move-top.js"></script>
-	<!-- easing -->
-	<script src="js/easing.js"></script>
-	<!--  necessary snippets for few javascript files -->
-	<script src="js/medic.js"></script>
-
-	<script src="js/bootstrap.js"></script>
-	<!-- Necessary-JavaScript-File-For-Bootstrap -->
-
-	<!-- //Js files -->
-
 </body>
-
 </html>

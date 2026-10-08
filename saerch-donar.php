@@ -1,5 +1,5 @@
 <?php
-//error_reporting(0);
+error_reporting(0);
 include('includes/config.php');
 ?>
 
@@ -67,9 +67,6 @@ include('includes/config.php');
 		<div class="py-xl-5 py-lg-3">
 			<form name="donar" method="post" style="padding-left: 30px;">
 <div class="row">
-
-
-
 <div class="col-lg-4 mb-4">
 <div class="font-italic">Blood Group<span style="color:red">*</span> </div>
 <div><select name="bloodgroup" class="form-control" required>
@@ -89,10 +86,7 @@ foreach($results as $result)
 </div>
 
 
-<div class="col-lg-4 mb-4">
-<div class="font-italic">Location </div>
-<div><textarea class="form-control" name="location"></textarea></div>
-</div>
+
 
 </div>
 
@@ -124,6 +118,7 @@ $bloodgroup=$_POST['bloodgroup'];
 $location=$_POST['location']; 
 
 $sql = "SELECT * from tblblooddonars where (status=:status and BloodGroup=:bloodgroup) ||  (Address=:location)";
+echo $sql;
 $query = $dbh -> prepare($sql);
 $query->bindParam(':status',$status,PDO::PARAM_STR);
 $query->bindParam(':bloodgroup',$bloodgroup,PDO::PARAM_STR);
@@ -158,68 +153,13 @@ foreach($results as $result)
 else
 {
 echo htmlentities("No Record Found");
-
 }
-
-
-            } ?>
-			
-			
-			</div>
+} ?>
+</div>
 			</div>
 		</div>
 	</div>
 	<!-- //contact -->
-
-	
-
-
-	<?php include('includes/footer.php');?>
-
-	<!-- Js files -->
-	<!-- JavaScript -->
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- Default-JavaScript-File -->
-
-	<!-- banner slider -->
-	<script src="js/responsiveslides.min.js"></script>
-	<script>
-		$(function () {
-			$("#slider4").responsiveSlides({
-				auto: true,
-				pager: true,
-				nav: true,
-				speed: 1000,
-				namespace: "callbacks",
-				before: function () {
-					$('.events').append("<li>before event fired.</li>");
-				},
-				after: function () {
-					$('.events').append("<li>after event fired.</li>");
-				}
-			});
-		});
-	</script>
-	<!-- //banner slider -->
-
-	<!-- fixed navigation -->
-	<script src="js/fixed-nav.js"></script>
-	<!-- //fixed navigation -->
-
-	<!-- smooth scrolling -->
-	<script src="js/SmoothScroll.min.js"></script>
-	<!-- move-top -->
-	<script src="js/move-top.js"></script>
-	<!-- easing -->
-	<script src="js/easing.js"></script>
-	<!--  necessary snippets for few javascript files -->
-	<script src="js/medic.js"></script>
-
-	<script src="js/bootstrap.js"></script>
-	<!-- Necessary-JavaScript-File-For-Bootstrap -->
-
-	<!-- //Js files -->
-
+</script>
 </body>
-
 </html>

@@ -4,7 +4,7 @@ include('includes/config.php');
 if(isset($_POST['login'])) 
   {
     $email=$_POST['email'];
-    $password=md5($_POST['password']);
+    $password=$_POST['password'];
     $sql ="SELECT id FROM tblblooddonars WHERE EmailId=:email and Password=:password";
     $query=$dbh->prepare($sql);
     $query->bindParam(':email',$email,PDO::PARAM_STR);

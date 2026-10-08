@@ -1,6 +1,6 @@
 
 <?php
-error_reporting(0);
+//error_reporting(0);
 include('includes/config.php');
 ?>
 <!DOCTYPE html>
@@ -43,8 +43,8 @@ include('includes/config.php');
 	<!-- Font-Awesome-Icons-CSS -->
 	<!-- //Custom-Files -->
 
-	<!-- Web-Fonts -->
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+<!-- Web-Fonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
 	    rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
 	    rel="stylesheet">
@@ -98,7 +98,6 @@ include('includes/config.php');
 	</div>
 	<!-- //banner -->
 	<div class="clearfix"></div>
-
 	<!-- banner bottom -->
 	<div class="banner-bottom py-5">
 		<div class="d-flex container py-xl-3 py-lg-3">
@@ -153,8 +152,6 @@ foreach($results as $result)
 						<a class="btn btn-primary" style="color:#fff" href="contact-blood.php?cid=<?php echo $result->id;?>">Request</a>
 					</div>
 				</div><?php }} ?>
-			
-			
 			</div>
 		</div>
 	</div>
@@ -234,12 +231,10 @@ Type O individuals are often called "universal donors" since their blood can be 
 		});
 	</script>
 	<!-- //banner slider -->
-
-	<!-- fixed navigation -->
+	 <!-- fixed navigation -->
 	<script src="js/fixed-nav.js"></script>
 	<!-- //fixed navigation -->
-
-	<!-- smooth scrolling -->
+	 <!-- smooth scrolling -->
 	<script src="js/SmoothScroll.min.js"></script>
 	<!-- move-top -->
 	<script src="js/move-top.js"></script>
@@ -247,12 +242,8 @@ Type O individuals are often called "universal donors" since their blood can be 
 	<script src="js/easing.js"></script>
 	<!--  necessary snippets for few javascript files -->
 	<script src="js/medic.js"></script>
-
 	<script src="js/bootstrap.js"></script>
 	<!-- Necessary-JavaScript-File-For-Bootstrap -->
-
-	<!-- //Js files -->
-
-</body>
-
+	 <!-- //Js files -->
+	</body>
 </html>

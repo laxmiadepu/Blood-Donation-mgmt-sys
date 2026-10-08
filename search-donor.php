@@ -90,8 +90,8 @@ foreach($results as $result)
 
 
 <div class="col-lg-4 mb-4">
-<div class="font-italic">Location </div>
-<div><textarea class="form-control" name="location"></textarea></div>
+<!--//<div class="font-italic">Location </div> -->
+<div><textarea class="form-control" name="location" value="Hyderabad" hidden></textarea></div>
 </div>
 
 </div>
